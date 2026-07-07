@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directories
+.venv/
+
+# Data files
+/data/raw/*
+/data/processed/*
+# Keep a small sample for demonstration
+!data/sample_data/*
+
+# Model artefacts – ignore large models but keep small ones for demo
+/models/*
+!models/logistic_regression.pkl
+!models/random_forest.pkl
+!models/xgboost.pkl
+
+# Visuals – keep generated plots and metrics
+/visuals/*
+!visuals/*.png
+!visuals/model_metrics.csv
+
+# Jupyter Notebook checkpoints
+*.ipynb_checkpoints
+
+# Local configuration
+.env
